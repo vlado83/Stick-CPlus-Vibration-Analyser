@@ -42,7 +42,7 @@ A portable 3-axis vibration analyzer built on the M5StickC Plus platform. Featur
 6. **Spectrogram** - Time-frequency heat map visualization
 
 ### Data Management
-- **Persistent Storage** - Up to 40 records stored in flash memory
+- **Persistent Storage** - Up to 30 records stored in flash memory (using default partitioning)
 - **Circular Buffer** - Automatic overwrite of oldest records when full
 - **RTC Timestamps** - Each record tagged with real-time clock timestamp
 - **Data Export** - Full data export via Serial port
@@ -258,7 +258,7 @@ RTC set to: 2025-01-15 14:30:00
 |-----------|-------|
 | Flash Available | ~1.5 MB |
 | Record Size | ~30 KB |
-| Max Records | 50 |
+| Max Records | 30 |
 | Data per Record | 3×1024 floats (time) + 3×1024 floats (spectrum) |
 | Metadata | Timestamp, statistics, peak frequencies |
 
@@ -435,7 +435,6 @@ Toggles on each sample - use to verify sampling rate
 - Improved screen drawing functions
 
 ### v1.2
-- Initial public release
 - Basic FFT analysis
 - Statistics screen
 - Bluetooth connectivity
