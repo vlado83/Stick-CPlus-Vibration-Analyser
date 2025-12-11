@@ -100,8 +100,8 @@ Search and install: "M5StickCPlus", "arduinoFFT"
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/yourusername/m5stick-vibration-analyzer.git
-cd m5stick-vibration-analyzer
+git clone https://github.com/vlado83/Stick-CPlus-Vibration-Analyser.git
+cd Stick-CPlus-Vibration-Analyser
 ```
 
 ### Step 2: Open in Arduino IDE
