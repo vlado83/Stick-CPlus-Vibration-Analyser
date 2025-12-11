@@ -43,7 +43,7 @@
 #define EXT_TRIG_PIN 36
 
 // ---------- Storage Configuration ----------
-#define MAX_RECORDS      40           // Maximum stored records (~50 fits in 1.5MB)
+#define MAX_RECORDS      30           // Maximum stored records (~32 fits in 1.408 MB)
 #define RECORDS_DIR      "/records"
 #define METADATA_FILE    "/meta.dat"
 
