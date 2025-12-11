@@ -134,7 +134,7 @@ T2025-01-15 14:30:00
 1. **Power on** the device
 2. Wait for startup screen (shows RTC time and storage status)
 3. Press **BtnA** to start recording
-4. LED turns on during recording (~4 seconds for 2048 samples)
+4. LED turns on during recording (~5 seconds for 1024 samples)
 5. Press **BtnB** to cycle through result screens
 
 ### Viewing Stored Records
@@ -164,7 +164,7 @@ T2025-01-15 14:30:00
 │ Vladimir Divic, 2025       │
 │ BT: Vibe002                │
 │ RTC: 2025-01-15 14:30:00   │
-│ Storage: 12/50 rec         │
+│ Storage: 12/30 rec         │
 │ BtnA-rec BtnB-screen       │
 │ Self-trigger mode          │
 └────────────────────────────┘
@@ -257,7 +257,7 @@ RTC set to: 2025-01-15 14:30:00
 | Parameter | Value |
 |-----------|-------|
 | Flash Available | ~1.5 MB |
-| Record Size | ~30 KB |
+| Record Size | ~40 KB |
 | Max Records | 30 |
 | Data per Record | 3×1024 floats (time) + 3×1024 floats (spectrum) |
 | Metadata | Timestamp, statistics, peak frequencies |
