@@ -122,7 +122,7 @@
 
 // #ifndef M5_LED
 #define M5_LED 10 // 19 for M5 StickC Plus2
-#define LEDINV true
+#define LEDINV true // false for M5 StickC Plus2
 //#endif
 
 #ifndef TFT_ORANGE
