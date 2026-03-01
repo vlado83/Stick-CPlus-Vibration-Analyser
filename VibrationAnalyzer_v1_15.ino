@@ -121,8 +121,8 @@
 #include "vibe_intro.h"
 
 // #ifndef M5_LED
-#define M5_LED 19 // 10 for M5 StickC Plus
-#define LEDINV false
+#define M5_LED 10 // 19 for M5 StickC Plus2
+#define LEDINV true
 //#endif
 
 #ifndef TFT_ORANGE
@@ -1291,8 +1291,10 @@ void setup() {
     // BtnB held at boot = external trigger mode
     if (M5.BtnB.isPressed()) isExtTriged = true;
     else isExtTriged = false;
-
-    digitalWrite(M5_LED, LOW);
+    if(LEDINV)
+    digitalWrite(M5_LED, HIGH);
+  else
+    digitalWrite(M5_LED, LOW);  
     isLogging = false;
     isTrig    = false;
     count     = 0;
@@ -1502,8 +1504,10 @@ else {
     // --- Sampling finished: FFT, stats, spectrogram, save ---
     if (count == SAMPLES) {
         digitalWrite(CALIB_T_PIN, LOW);
+      if(LEDINV)
+        digitalWrite(M5_LED, HIGH);
+     else
         digitalWrite(M5_LED, LOW);
-
         long  dt  = 0;
         float dts = 0.0f;
         for (int i = 0; i < SAMPLES - 1; i++) {
@@ -1700,8 +1704,10 @@ else {
         const uint32_t nowUs = micros();
         if ((uint32_t)(nowUs - prevSampleUs) >= TTNS_US) {
             prevSampleUs = nowUs;
-
-            digitalWrite(M5_LED, HIGH);
+            if(LEDINV)
+            digitalWrite(M5_LED, LOW);
+          else
+              digitalWrite(M5_LED, HIGH);
             digitalWrite(CALIB_T_PIN, !digitalRead(CALIB_T_PIN));
 
             M5.Imu.getAccel(&accX, &accY, &accZ);
