@@ -1,4 +1,4 @@
-// Verzija 1.13.1
+// Verzija 1.15
 // Based on v1.7_RTC by Vladimir Divic
 // Added: RTC timestamp for each record, serial command to set RTC
 //
@@ -110,7 +110,7 @@
 // Changes in v1.14.0:
 // - Explicit ending of data stream 
 
-// Changes in v1.14.1:
+// Changes in v1.15:
 // Intro
 
 #include <M5Unified.h>
@@ -1318,9 +1318,9 @@ void setup() {
     M5.Display.setCursor(5, 1);
     M5.Display.print("Vibration analyser");
     M5.Display.setCursor(5, th);
-    M5.Display.print("ver. 1.14 (M5Unified)");
+    M5.Display.print("ver. 1.15 (M5Unified)");
     M5.Display.setCursor(5, 2 * th);
-    M5.Display.print("Vladimir Divic, 2025");
+    M5.Display.print("Vladimir Divic, 2026");
     M5.Display.setCursor(5, 3 * th);
     M5.Display.print("Serial: USB");
 
