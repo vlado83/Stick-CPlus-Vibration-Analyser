@@ -8,8 +8,7 @@ Records accelerometer time series, computes **FFT + peak list**, shows **time se
 ![Storage](https://img.shields.io/badge/storage-LittleFS-purple.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-> Note: The sketch filename is `VibrationAnalyzer_v1_15.ino`, while the on-device startup screen prints:  
-> `ver. 1.14 (M5Unified)` (this is the firmware string inside the code).
+
 
 ---
 
